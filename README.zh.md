@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/resources/logo_256.png)
+![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/resources/logo_256.png)
 
 一次创作，多平台发布。发匣支持将 Markdown 内容发布到 GitHub Pages、微信公众号、知乎、掘金、头条号、微博、Reddit、X/Twitter、Medium、Facebook、LinkedIn 等 11+ 平台。
 

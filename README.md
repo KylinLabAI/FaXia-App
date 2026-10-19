@@ -2,7 +2,7 @@
 
 [中文介绍](README.zh.md)
 
-![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/resources/logo_256.png)
+![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/resources/logo_256.png)
 
 One creation, multi-platform publishing. FaXia supports publishing Markdown content to 11+ platforms including GitHub Pages, WeChat Official Account, Zhihu, Juejin, Toutiao, Weibo, Reddit, X/Twitter, Medium, Facebook, and LinkedIn.
 

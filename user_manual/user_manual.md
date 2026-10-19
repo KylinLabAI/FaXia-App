@@ -2,7 +2,7 @@
 
 [中文介绍](user_manual.zh.md)
 
-![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/logo_256.png)
+![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/logo_256.png)
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
    - You will see: Installation wizard guiding you through setup
 
 3. Launch FaXia from your applications folder or start menu
-   - You will see: The main application window with four tabs: Publish, Published, Comments, Settings
+   - You will see: The main application window with six tabs: Publish, Published, Comments, Settings, Account, and About (plus a Feedback button)
 
 **Expected result:** FaXia is installed and running successfully
 
@@ -47,7 +47,9 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 **Steps:**
 
 1. Click on the Settings tab
-   - You will see: Settings page with sections for Data Directory, Blog Data, and Platform Credentials
+   - You will see: Settings page with sections for App Data Directory, Blog Root Directory, and a unified Platform Credentials panel
+
+![Platform credentials](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-3.png)
 
 2. For each platform you want to configure:
    - Click on the platform name
@@ -79,6 +81,8 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 1. Click on the Publish tab
    - You will see: Publish interface with mode selection and file upload
 
+![Publish](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publish.png)
+
 2. Choose publish mode:
    - Single Platform: Select one platform from the dropdown
    - All Platforms: Publish to all configured platforms simultaneously
@@ -92,7 +96,11 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 5. Click "Publish"
    - You will see: Progress indicators for each platform showing success or failure
 
+![Publishing progress](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publishing.png)
+
 **Expected result:** Article is published to selected platforms with direct links provided
+
+![Publish results](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-published-blogs.png)
 
 **Troubleshooting:**
 
@@ -111,6 +119,8 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 
 1. Click on the Published tab
    - You will see: List of all previously published articles
+
+![Published history](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-4.png)
 
 2. Find the article you want to update and click "Update"
    - You will see: Confirmation dialog with article details
@@ -140,6 +150,8 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 1. Click on the Comments tab
    - You will see: Centralized view of comments from all connected platforms
 
+![Comments](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-comments.png)
+
 2. Filter comments by platform or status (new, replied, resolved)
    - You will see: Filtered list of comments
 
@@ -164,9 +176,11 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 **Steps:**
 
 1. Click on the Settings tab
-2. Click on "Data Directory" section
-3. Click "Browse" to select a folder for storing blog data
+2. Click on "App Data Directory" section
+3. Click "Browse" to select a folder for storing sessions, history, screenshots, and config
 4. Click "Save"
+
+![Data directory and log level](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-1.png)
 
 **Expected result:** Data directory is updated
 
@@ -178,12 +192,31 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 **Steps:**
 
 1. Click on the Settings tab
-2. Click on "Blog Data" section
-3. Set default blog directory
-4. Configure article file naming conventions
-5. Click "Save"
+2. Click on "Blog Root Directory" section
+3. Set the root folder where your blog Markdown files are stored
+4. Click "Save"
+
+![Blog root directory](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-2.png)
 
 **Expected result:** Blog settings are updated
+
+#### Task: Manage Account and Updates
+
+**Prerequisites:**
+- FaXia is running
+
+**Steps:**
+
+1. Click on the Account tab
+   - You will see: Integration, app, device, and sign-in status
+
+2. Click "Check for updates" to look for a newer release
+
+3. Sign in with GitHub or WeChat to activate your license
+
+![Account](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-account.png)
+
+**Expected result:** Account and update status are shown
 
 ## Appendix
 

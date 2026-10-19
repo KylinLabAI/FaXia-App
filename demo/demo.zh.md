@@ -4,14 +4,14 @@
 
 ## 产品概述
 
-![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/logo_256.png)
+![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/logo_256.png)
 
 **发匣 FaXia** 是一个多平台内容发布工具，支持内容创作者一键将 Markdown 文章发布到 11+ 个平台。本演示文档展示了关键功能，包括多平台发布、博客状态跟踪、评论监控和平台凭证管理。
 
-![应用概览](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/App_overview.png)
+![应用概览](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
 
 - 统一界面管理所有内容发布需求
-- 四个主要标签页：发布、已发布、评论、设置
+- 六个主要标签页：发布、已发布、评论、设置、账户、关于（另有反馈按钮）
 - 支持 GitHub Pages、微信公众号、知乎、掘金、头条号、微博、Reddit、X/Twitter、Medium、Facebook、LinkedIn
 
 ## 核心价值
@@ -60,138 +60,98 @@
 
 #### 1. 发布功能
 
-**发布模式选择**
+**发布模式与平台选择**
 
-选择发布方式：
+选择单文件或多平台目录模式，然后勾选目标平台：
 
-![发布模式](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode.png)
+![发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
 
-- 选择单平台发布或多平台同时发布
+- 在**单文件**和**目录（多平台）**模式之间切换
 - 选择要发布的 Markdown 文件
-- 发布前配置选项
+- 从清单中选择目标平台（Pages、头条、微信、知乎、掘金、微博等）
+- 自动上传图片并按平台替换 URL
 
-**单平台发布**
+**发布进度**
 
-发布到特定平台：
+实时查看每个平台并发发布的状态：
 
-![单平台发布](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode_one_platform.png)
+![发布中](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publishing.png)
 
-- 从可用选项中选择单个目标平台
-- 发布前预览内容
-- 支持演练模式验证
-- 自动图片上传和 URL 替换
-
-**全平台发布**
-
-同时发布到多个平台：
-
-![全平台发布](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode_all_platforms.png)
-
-- 选择多个平台并发发布
-- 每个平台独立处理
+- 每个平台独立处理，显示“Working…”状态
 - 一个平台失败不影响其他平台
-- 批量发布节省时间和精力
+- 先用**演练（Dry Run）**预览，再点击**发布中**执行
 
-**已发布博客列表**
+**发布结果**
 
-跟踪发布历史和状态：
+查看每个平台的发布结果和直达链接：
 
-![已发布博客列表](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/published_blog_list.png)
+![已发布博客](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-blogs.png)
 
-- 查看所有已发布文章及其状态指示
-- 查看各平台成功或失败情况
-- 识别需要重新发布的文章
+![已发布微博客](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-miroblogs.png)
+
+- 查看哪些平台成功、哪些待处理、哪些失败
 - 各平台已发布内容的直达链接
-- 支持更新已发布的文章
+- 微信会显示**草稿（Draft）**状态及待发布原因
+- 识别需要重新发布或人工跟进的文章
 
-#### 2. 博客评论
+#### 2. 已发布历史与同步
+
+浏览完整发布历史，并从各平台重新同步记录：
+
+![已发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-4.png)
+
+- 按标题分组查看所有已发布文章及其各平台记录
+- **从<平台>同步**把最新已发布列表拉回 FaXia
+- **移除重复项**清理重复的历史记录
+- 汇总显示已跟踪的博客数与平台记录数
+
+#### 3. 博客评论
 
 监控所有平台的评论：
 
-![博客评论](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/blog_comments.png)
+![评论](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-comments.png)
 
-- 所有已连接平台评论的集中视图
-- 实时反馈收集
-- 评论状态跟踪（新、已回复、已解决）
-- AI 辅助回复建议
-- 快速跳转到各平台原始评论
-- 按平台和状态筛选评论
+- 按文章集中展示各已连接平台的评论
+- 按平台筛选（含评论数）
+- 跳转到原始文章或其评论区
+- 在应用内管理回复
 
-#### 3. 设置
+#### 4. 设置
 
-**数据目录配置**
+**应用数据目录与日志级别**
 
-设置数据存储偏好：
+![设置：数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-1.png)
 
-![数据目录](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_data_directory.png)
+- 配置会话、历史、截图和配置的存储位置
+- 重置为平台默认位置
+- 设置应用日志详细度（fatal → detail）；更改立即生效并在重启后保留
 
-- 配置博客数据本地存储位置
-- 设置文章文件的默认博客文件夹
-- 管理数据存储位置
-- 查看存储使用信息
+**博客根目录**
 
-**博客数据设置**
+![设置：博客根目录](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-2.png)
 
-配置博客相关设置：
-
-![博客数据设置](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_data_blog.png)
-
-- 设置默认博客目录
-- 配置文章文件命名约定
-- 设置预览选项
-- 管理草稿和已发布内容的分离
+- 指向存放博客 Markdown 文件的根目录
+- 用于定位待发布的文章文件
 
 **平台凭证**
 
-配置每个支持平台的凭证：
+在一个统一面板中配置各平台凭证：
 
-**GitHub Pages 凭证**
+![设置：凭证](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-3.png)
 
-![GitHub Pages 凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_pages.png)
+- 平台标签以实心/空心一眼区分已配置/未配置
+- Pages（GitHub/GitLab/Gitee）：服务商、访问令牌、仓库、分支、发布/图片目录，带**保存**和**测试**
+- Cookie / Playwright 平台（知乎、掘金、头条、微博）：登录一次，会话即被持久化用于无头发布
 
-- 配置 GitHub 访问令牌
-- 设置仓库信息
-- 配置 Pages 部署设置
+#### 5. 账户
 
-**微信公众号凭证**
+管理 LianXia 集成与登录：
 
-![微信凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_wechat.png)
+![账户](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-account.png)
 
-- 配置微信公众号 API 凭证
-- 设置 App ID 和 App Secret
-- 配置 token 和 encodingAESKey
-
-**知乎凭证**
-
-![知乎凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_zhihu.png)
-
-- 配置知乎认证
-- 设置 Playwright 模式以提高可靠性
-- 配置浏览器自动化设置
-
-**掘金凭证**
-
-![掘金凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_juejin.png)
-
-- 配置掘金 API 凭证
-- 设置访问令牌
-- 配置发布选项
-
-**头条号凭证**
-
-![头条号凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_toutiao.png)
-
-- 配置头条号 API 凭证
-- 设置客户端 ID 和客户端密钥
-- 配置内容发布设置
-
-**微博凭证**
-
-![微博凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_weibo.png)
-
-- 配置微博 API 凭证
-- 设置 App Key 和 App Secret
-- 配置 OAuth 设置
+- 查看集成、应用、设备与登录状态
+- **检查更新**
+- 使用 GitHub 或微信登录
 
 ---
 
@@ -260,20 +220,16 @@
 
 | 功能 | 描述 | 图片 |
 |---------|-------------|-------|
-| 应用概览 | 统一的发布管理界面 | App_overview.png |
-| 发布模式 | 选择单平台或多平台发布 | publish_mode.png |
-| 单平台发布 | 发布到特定平台 | publish_mode_one_platform.png |
-| 全平台发布 | 同时发布到多个平台 | publish_mode_all_platforms.png |
-| 已发布列表 | 查看发布历史和状态 | published_blog_list.png |
-| 博客评论 | 监控所有平台评论 | blog_comments.png |
-| 数据目录 | 配置数据存储位置 | settings_data_directory.png |
-| 博客设置 | 配置博客相关设置 | settings_data_blog.png |
-| GitHub Pages | 配置 GitHub Pages 凭证 | settings_credentials_pages.png |
-| 微信 | 配置微信公众号凭证 | settings_credentials_wechat.png |
-| 知乎 | 配置知乎凭证 | settings_credentials_zhihu.png |
-| 掘金 | 配置掘金凭证 | settings_credentials_juejin.png |
-| 头条号 | 配置头条号凭证 | settings_credentials_toutiao.png |
-| 微博 | 配置微博凭证 | settings_credentials_weibo.png |
+| 发布与模式 | 单文件或目录，选择目标平台 | faxia-publish.png |
+| 发布进度 | 各平台并发发布 + 演练 | faxia-publishing.png |
+| 发布结果 | 各平台成功/草稿/失败与链接 | faxia-published-blogs.png |
+| 发布结果（微博客） | 微博客发布结果 | faxia-published-miroblogs.png |
+| 已发布历史与同步 | 历史列表 + 各平台同步 | faxia-settings-4.png |
+| 博客评论 | 监控所有平台评论 | faxia-comments.png |
+| 数据目录与日志 | 存储位置 + 日志详细度 | faxia-settings-1.png |
+| 博客根目录 | 博客文件位置 | faxia-settings-2.png |
+| 平台凭证 | 统一的平台凭证面板 | faxia-settings-3.png |
+| 账户 | LianXia 集成与登录 | faxia-account.png |
 
 ---
 

@@ -2,7 +2,7 @@
 
 [English](user_manual.md)
 
-![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/logo_256.png)
+![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/logo_256.png)
 
 ## 简介
 
@@ -27,7 +27,7 @@
    - 您将看到：安装向导，引导您完成安装
 
 3. 从应用程序文件夹或开始菜单启动发匣
-   - 您将看到：主应用窗口，包含四个标签页：发布、已发布、评论、设置
+   - 您将看到：主应用窗口，包含六个标签页：发布、已发布、评论、设置、账户、关于（另有反馈按钮）
 
 **预期结果：** 发匣安装成功并正常运行
 
@@ -47,7 +47,9 @@
 **操作步骤：**
 
 1. 点击设置标签页
-   - 您将看到：设置页面，包含数据目录、博客数据和平台凭证部分
+   - 您将看到：设置页面，包含应用数据目录、博客根目录，以及统一的平台凭证面板
+
+![平台凭证](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-3.png)
 
 2. 为每个要配置的平台：
    - 点击平台名称
@@ -79,6 +81,8 @@
 1. 点击发布标签页
    - 您将看到：发布界面，包含模式选择和文件上传
 
+![发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publish.png)
+
 2. 选择发布模式：
    - 单平台：从下拉菜单选择一个平台
    - 所有平台：同时发布到所有已配置的平台
@@ -92,7 +96,11 @@
 5. 点击"发布"
    - 您将看到：每个平台的进度指示器，显示成功或失败
 
+![发布进度](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publishing.png)
+
 **预期结果：** 文章发布到选定平台，提供直达链接
+
+![发布结果](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-published-blogs.png)
 
 **常见问题：**
 
@@ -111,6 +119,8 @@
 
 1. 点击已发布标签页
    - 您将看到：所有已发布文章的列表
+
+![已发布历史](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-4.png)
 
 2. 找到要更新的文章并点击"更新"
    - 您将看到：确认对话框，显示文章详情
@@ -140,6 +150,8 @@
 1. 点击评论标签页
    - 您将看到：所有已连接平台的评论集中视图
 
+![评论](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-comments.png)
+
 2. 按平台或状态（新、已回复、已解决）筛选评论
    - 您将看到：筛选后的评论列表
 
@@ -164,9 +176,11 @@
 **操作步骤：**
 
 1. 点击设置标签页
-2. 点击"数据目录"部分
-3. 点击"浏览"选择存储博客数据的文件夹
+2. 点击"应用数据目录"部分
+3. 点击"浏览"选择存储会话、历史、截图和配置的文件夹
 4. 点击"保存"
+
+![数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-1.png)
 
 **预期结果：** 数据目录已更新
 
@@ -178,12 +192,31 @@
 **操作步骤：**
 
 1. 点击设置标签页
-2. 点击"博客数据"部分
-3. 设置默认博客目录
-4. 配置文章文件命名约定
-5. 点击"保存"
+2. 点击"博客根目录"部分
+3. 设置存放博客 Markdown 文件的根目录
+4. 点击"保存"
+
+![博客根目录](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-2.png)
 
 **预期结果：** 博客设置已更新
+
+#### 任务：管理账户与更新
+
+**前提条件：**
+- 发匣正在运行
+
+**操作步骤：**
+
+1. 点击账户标签页
+   - 您将看到：集成、应用、设备与登录状态
+
+2. 点击"检查更新"查找新版本
+
+3. 使用 GitHub 或微信登录以激活授权
+
+![账户](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-account.png)
+
+**预期结果：** 显示账户与更新状态
 
 ## 附录
 

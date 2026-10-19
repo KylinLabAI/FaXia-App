@@ -4,14 +4,14 @@
 
 ## Product Overview
 
-![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/logo_256.png)
+![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/logo_256.png)
 
 **FaXia** is a multi-platform content publishing tool that enables content creators to publish Markdown articles to 11+ platforms with one click. This demo walks through the key features including multi-platform publishing, blog status tracking, comment monitoring, and platform credential management.
 
-![App Overview](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/App_overview.png)
+![App Overview](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
 
 - Unified interface for managing all your content publishing needs
-- Four main tabs: Publish, Published, Comments, and Settings
+- Six main tabs: Publish, Published, Comments, Settings, Account, and About (plus a Feedback button)
 - Support for GitHub Pages, WeChat Official Account, Zhihu, Juejin, Toutiao, Weibo, Reddit, X/Twitter, Medium, Facebook, and LinkedIn
 
 ## Core Value
@@ -60,138 +60,98 @@ Content Creation → Platform Adaptation → FaXia Publishing → Multi-platform
 
 #### 1. Publishing
 
-**Publish Mode Selection**
+**Publish Mode & Platform Selection**
 
-Choose how you want to publish your content:
+Choose a single file or a multi-platform directory, then tick the target platforms:
 
-![Publish Mode](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode.png)
+![Publish](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
 
-- Select between publishing to a single platform or all platforms
-- Choose your Markdown file for publishing
-- Configure publishing options before execution
+- Toggle between **Single File** and **Directory (Multi-Platform)** modes
+- Pick the Markdown file to publish
+- Select target platforms from the checklist (Pages, Toutiao, WeChat, Zhihu, Juejin, Weibo, and more)
+- Automatic image upload and URL replacement per platform
 
-**Publish to One Platform**
+**Publishing Progress**
 
-Publish your content to a specific platform:
+Watch each platform publish concurrently with live status:
 
-![Publish to One Platform](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode_one_platform.png)
+![Publishing](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publishing.png)
 
-- Select a single target platform from the available options
-- Preview content before publishing
-- Supports dry-run mode for verification
-- Automatic image upload and URL replacement
+- Each platform processes independently with a "Working…" indicator
+- One platform failure does not affect the others
+- Use **Dry Run** to preview, then **Publishing…** to execute
 
-**Publish to All Platforms**
+**Publish Results**
 
-Simultaneously publish to multiple platforms:
+Review the per-platform outcome and direct links:
 
-![Publish to All Platforms](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/publish_mode_all_platforms.png)
+![Published blogs](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-blogs.png)
 
-- Select multiple platforms for concurrent publishing
-- Each platform processes independently
-- One platform failure does not affect others
-- Batch publishing saves time and effort
+![Published micro-blogs](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-miroblogs.png)
 
-**Published Blog List**
+- See which platforms succeeded, which are pending, and which failed
+- Direct links to the published content on each platform
+- WeChat surfaces a **Draft** status with the pending-publish reason
+- Identify articles that need re-publishing or manual follow-up
 
-Track your publishing history and status:
+#### 2. Published History & Sync
 
-![Published Blog List](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/published_blog_list.png)
+Browse your full publishing history and re-sync records from each platform:
 
-- View all published articles with status indicators
-- See which platforms succeeded and which failed
-- Identify articles that need re-publishing
-- Direct links to published content on each platform
-- Support for updating previously published articles
+![Published](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-4.png)
 
-#### 2. Blog Comments
+- View all published articles grouped by title, with per-platform records
+- **Sync from <platform>** pulls the latest published list back into FaXia
+- **Remove Duplicates** cleans repeated history entries
+- Totals show how many blogs and platform records are tracked
+
+#### 3. Blog Comments
 
 Monitor comments across all platforms:
 
-![Blog Comments](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/blog_comments.png)
+![Comments](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-comments.png)
 
-- Centralized view of comments from all connected platforms
-- Real-time feedback collection
-- Comment status tracking (new, replied, resolved)
-- AI-assisted reply suggestions
-- Quick navigation to original comment on each platform
-- Comment filtering by platform and status
+- Centralized, per-article list of comments from connected platforms
+- Filter by platform (with comment counts)
+- Jump to the original article or its comment thread
+- Manage replies from within the app
 
-#### 3. Settings
+#### 4. Settings
 
-**Data Directory Configuration**
+**App Data Directory & Log Level**
 
-Set up your data storage preferences:
+![Settings: data directory and log level](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-1.png)
 
-![Data Directory](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_data_directory.png)
+- Configure where sessions, history, screenshots, and config are stored
+- Reset to the platform default location
+- Set the app log verbosity (fatal → detail); changes apply immediately and persist across restarts
 
-- Configure where blog data is stored locally
-- Set default blog folder for article files
-- Manage data storage location
-- View storage usage information
+**Blog Root Directory**
 
-**Blog Data Settings**
+![Settings: blog root](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-2.png)
 
-Configure blog-related settings:
-
-![Blog Data Settings](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_data_blog.png)
-
-- Set default blog directory
-- Configure article file naming conventions
-- Set preview options
-- Manage draft and published content separation
+- Point FaXia at the root folder where your blog Markdown files live
+- Used to locate article files for publishing
 
 **Platform Credentials**
 
-Configure credentials for each supported platform:
+Configure credentials for each platform from one unified panel:
 
-**GitHub Pages Credentials**
+![Settings: credentials](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-3.png)
 
-![GitHub Pages Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_pages.png)
+- Platform chips show configured (filled) vs. not-configured (empty) at a glance
+- Pages (GitHub/GitLab/Gitee): provider, access token, repository, branch, and publish/image directories, with **Save** and **Test**
+- Cookie / Playwright platforms (Zhihu, Juejin, Toutiao, Weibo): log in once and the session is persisted for headless publishing
 
-- Configure GitHub access token
-- Set repository information
-- Configure Pages deployment settings
+#### 5. Account
 
-**WeChat Official Account Credentials**
+Manage LianXia integration and sign-in:
 
-![WeChat Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_wechat.png)
+![Account](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-account.png)
 
-- Configure WeChat Official Account API credentials
-- Set app ID and app secret
-- Configure token and encodingAESKey
-
-**Zhihu Credentials**
-
-![Zhihu Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_zhihu.png)
-
-- Configure Zhihu authentication
-- Set up Playwright mode for better reliability
-- Configure browser automation settings
-
-**Juejin Credentials**
-
-![Juejin Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_juejin.png)
-
-- Configure Juejin API credentials
-- Set access token
-- Configure publishing options
-
-**Toutiao Credentials**
-
-![Toutiao Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_toutiao.png)
-
-- Configure Toutiao API credentials
-- Set client ID and client secret
-- Configure content publishing settings
-
-**Weibo Credentials**
-
-![Weibo Credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/settings_credentials_weibo.png)
-
-- Configure Weibo API credentials
-- Set app key and app secret
-- Configure OAuth settings
+- View integration, app, device, and sign-in status
+- **Check for updates**
+- Sign in with GitHub or WeChat
 
 ---
 
@@ -260,20 +220,16 @@ Configure credentials for each supported platform:
 
 | Feature | Description | Image |
 |---------|-------------|-------|
-| App Overview | Unified interface for publishing management | App_overview.png |
-| Publish Mode | Select single or multi-platform publishing | publish_mode.png |
-| Single Platform | Publish to one specific platform | publish_mode_one_platform.png |
-| All Platforms | Publish to multiple platforms concurrently | publish_mode_all_platforms.png |
-| Published List | View publishing history and status | published_blog_list.png |
-| Blog Comments | Monitor comments across all platforms | blog_comments.png |
-| Data Directory | Configure data storage location | settings_data_directory.png |
-| Blog Settings | Configure blog-related settings | settings_data_blog.png |
-| GitHub Pages | Configure GitHub Pages credentials | settings_credentials_pages.png |
-| WeChat | Configure WeChat Official Account credentials | settings_credentials_wechat.png |
-| Zhihu | Configure Zhihu credentials | settings_credentials_zhihu.png |
-| Juejin | Configure Juejin credentials | settings_credentials_juejin.png |
-| Toutiao | Configure Toutiao credentials | settings_credentials_toutiao.png |
-| Weibo | Configure Weibo credentials | settings_credentials_weibo.png |
+| Publish & Mode | Single-file or directory, pick target platforms | faxia-publish.png |
+| Publishing Progress | Concurrent per-platform publishing + dry run | faxia-publishing.png |
+| Publish Results | Per-platform success / draft / failure with links | faxia-published-blogs.png |
+| Publish Results (micro) | Micro-blog publish results | faxia-published-miroblogs.png |
+| Published History & Sync | History list + per-platform sync | faxia-settings-4.png |
+| Blog Comments | Monitor comments across all platforms | faxia-comments.png |
+| Data Directory & Log | Storage location + log verbosity | faxia-settings-1.png |
+| Blog Root | Blog files location | faxia-settings-2.png |
+| Credentials | Unified platform credential panel | faxia-settings-3.png |
+| Account | LianXia integration & sign-in | faxia-account.png |
 
 ---
 
