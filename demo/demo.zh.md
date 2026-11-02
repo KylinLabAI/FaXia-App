@@ -4,11 +4,11 @@
 
 ## 产品概述
 
-![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/logo_256.png)
+![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/logo_256.png)
 
 **发匣 FaXia** 是一个多平台内容发布工具，支持内容创作者一键将 Markdown 文章发布到 11+ 个平台。本演示文档展示了关键功能，包括多平台发布、博客状态跟踪、评论监控和平台凭证管理。
 
-![应用概览](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
+![应用概览](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publish.png)
 
 - 统一界面管理所有内容发布需求
 - 六个主要标签页：发布、已发布、评论、设置、账户、关于（另有反馈按钮）
@@ -64,7 +64,7 @@
 
 选择单文件或多平台目录模式，然后勾选目标平台：
 
-![发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
+![发布](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publish.png)
 
 - 在**单文件**和**目录（多平台）**模式之间切换
 - 选择要发布的 Markdown 文件
@@ -75,7 +75,7 @@
 
 实时查看每个平台并发发布的状态：
 
-![发布中](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publishing.png)
+![发布中](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publishing.png)
 
 - 每个平台独立处理，显示“Working…”状态
 - 一个平台失败不影响其他平台
@@ -85,9 +85,9 @@
 
 查看每个平台的发布结果和直达链接：
 
-![已发布博客](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-blogs.png)
+![已发布博客](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-published-blogs.png)
 
-![已发布微博客](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-miroblogs.png)
+![已发布微博客](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-published-miroblogs.png)
 
 - 查看哪些平台成功、哪些待处理、哪些失败
 - 各平台已发布内容的直达链接
@@ -98,7 +98,7 @@
 
 浏览完整发布历史，并从各平台重新同步记录：
 
-![已发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-4.png)
+![已发布](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-4.png)
 
 - 按标题分组查看所有已发布文章及其各平台记录
 - **从<平台>同步**把最新已发布列表拉回 FaXia
@@ -109,7 +109,7 @@
 
 监控所有平台的评论：
 
-![评论](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-comments.png)
+![评论](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-comments.png)
 
 - 按文章集中展示各已连接平台的评论
 - 按平台筛选（含评论数）
@@ -120,7 +120,7 @@
 
 **应用数据目录与日志级别**
 
-![设置：数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-1.png)
+![设置：数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-1.png)
 
 - 配置会话、历史、截图和配置的存储位置
 - 重置为平台默认位置
@@ -128,7 +128,7 @@
 
 **博客根目录**
 
-![设置：博客根目录](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-2.png)
+![设置：博客根目录](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-2.png)
 
 - 指向存放博客 Markdown 文件的根目录
 - 用于定位待发布的文章文件
@@ -137,7 +137,7 @@
 
 在一个统一面板中配置各平台凭证：
 
-![设置：凭证](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-3.png)
+![设置：凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-3.png)
 
 - 平台标签以实心/空心一眼区分已配置/未配置
 - Pages（GitHub/GitLab/Gitee）：服务商、访问令牌、仓库、分支、发布/图片目录，带**保存**和**测试**
@@ -147,7 +147,7 @@
 
 管理 LianXia 集成与登录：
 
-![账户](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-account.png)
+![账户](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-account.png)
 
 - 查看集成、应用、设备与登录状态
 - **检查更新**

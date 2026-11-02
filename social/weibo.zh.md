@@ -1,4 +1,4 @@
----
+﻿---
 title: "写一次文章，同时发到11个平台——这个开源工具省了我一半的运营时间"
 platform: weibo
 language: zh-CN
@@ -17,9 +17,9 @@ hashtags: ["#独立开发", "#效率工具", "#内容创作"]
 我写了一个开源工具 发匣 FaXia：写完 Markdown，一条命令（或桌面端点一下），自动并发发布到知乎、掘金、微信公众号、头条、微博、GitHub Pages、Medium、Reddit、Twitter、Facebook、LinkedIn。图片自动上传，格式自动适配，发过的文章自动识别更新。
 
 ✅ 纯本地运行，不上传任何数据
-✅ 开源免费（MIT）
+✅ 纯本地运行（KylinLab.tech 商业许可）
 ✅ CLI + 桌面端双界面
 
-GitHub 搜 KylinLabAI/FaXia-App，或 npm install -g faxia 直接体验。
+GitHub 搜 KylinLabAI/FaXia-App，下载桌面安装包即可体验。
 
 #独立开发 #效率工具 #内容创作

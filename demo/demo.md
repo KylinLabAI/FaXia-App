@@ -1,17 +1,17 @@
-# FaXia Demo Walkthrough
+﻿# FaXia Demo Walkthrough
 
 [中文介绍](demo.zh.md)
 
 ## Product Overview
 
-![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/logo_256.png)
+![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/logo_256.png)
 
 **FaXia** is a multi-platform content publishing tool that enables content creators to publish Markdown articles to 11+ platforms with one click. This demo walks through the key features including multi-platform publishing, blog status tracking, comment monitoring, and platform credential management.
 
-![App Overview](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
+![App Overview](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publish.png)
 
 - Unified interface for managing all your content publishing needs
-- Six main tabs: Publish, Published, Comments, Settings, Account, and About (plus a Feedback button)
+- Nine main tabs: Publish, Published, Comments, Compose, Blogs, Skills, Settings, Account, and About (plus a Feedback button)
 - Support for GitHub Pages, WeChat Official Account, Zhihu, Juejin, Toutiao, Weibo, Reddit, X/Twitter, Medium, Facebook, and LinkedIn
 
 ## Core Value
@@ -64,7 +64,7 @@ Content Creation → Platform Adaptation → FaXia Publishing → Multi-platform
 
 Choose a single file or a multi-platform directory, then tick the target platforms:
 
-![Publish](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publish.png)
+![Publish](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publish.png)
 
 - Toggle between **Single File** and **Directory (Multi-Platform)** modes
 - Pick the Markdown file to publish
@@ -75,7 +75,7 @@ Choose a single file or a multi-platform directory, then tick the target platfor
 
 Watch each platform publish concurrently with live status:
 
-![Publishing](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-publishing.png)
+![Publishing](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-publishing.png)
 
 - Each platform processes independently with a "Working…" indicator
 - One platform failure does not affect the others
@@ -85,9 +85,9 @@ Watch each platform publish concurrently with live status:
 
 Review the per-platform outcome and direct links:
 
-![Published blogs](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-blogs.png)
+![Published blogs](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-published-blogs.png)
 
-![Published micro-blogs](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-published-miroblogs.png)
+![Published micro-blogs](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-published-miroblogs.png)
 
 - See which platforms succeeded, which are pending, and which failed
 - Direct links to the published content on each platform
@@ -98,7 +98,7 @@ Review the per-platform outcome and direct links:
 
 Browse your full publishing history and re-sync records from each platform:
 
-![Published](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-4.png)
+![Published](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-4.png)
 
 - View all published articles grouped by title, with per-platform records
 - **Sync from <platform>** pulls the latest published list back into FaXia
@@ -109,7 +109,7 @@ Browse your full publishing history and re-sync records from each platform:
 
 Monitor comments across all platforms:
 
-![Comments](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-comments.png)
+![Comments](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-comments.png)
 
 - Centralized, per-article list of comments from connected platforms
 - Filter by platform (with comment counts)
@@ -120,7 +120,7 @@ Monitor comments across all platforms:
 
 **App Data Directory & Log Level**
 
-![Settings: data directory and log level](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-1.png)
+![Settings: data directory and log level](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-1.png)
 
 - Configure where sessions, history, screenshots, and config are stored
 - Reset to the platform default location
@@ -128,7 +128,7 @@ Monitor comments across all platforms:
 
 **Blog Root Directory**
 
-![Settings: blog root](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-2.png)
+![Settings: blog root](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-2.png)
 
 - Point FaXia at the root folder where your blog Markdown files live
 - Used to locate article files for publishing
@@ -137,7 +137,7 @@ Monitor comments across all platforms:
 
 Configure credentials for each platform from one unified panel:
 
-![Settings: credentials](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-settings-3.png)
+![Settings: credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-settings-3.png)
 
 - Platform chips show configured (filled) vs. not-configured (empty) at a glance
 - Pages (GitHub/GitLab/Gitee): provider, access token, repository, branch, and publish/image directories, with **Save** and **Test**
@@ -147,7 +147,7 @@ Configure credentials for each platform from one unified panel:
 
 Manage LianXia integration and sign-in:
 
-![Account](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/demo/resources/faxia-account.png)
+![Account](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/demo/resources/faxia-account.png)
 
 - View integration, app, device, and sign-in status
 - **Check for updates**

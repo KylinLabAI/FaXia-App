@@ -1,4 +1,4 @@
----
+﻿---
 title: "I Built a Free Tool That Publishes Your Writing to 11 Platforms at Once"
 platform: facebook
 language: en-US
@@ -25,7 +25,7 @@ What I love about it:
 - It remembers where you published, so re-publishing updates existing posts instead of creating duplicates
 - You can use it from the terminal (`tdp publish my-article.md`) or the desktop app
 
-It's completely free and open source under the MIT license. If you write content across multiple platforms, this will save you hours every week.
+It runs entirely on your machine under the KylinLab.tech commercial license. If you write content across multiple platforms, this will save you hours every week.
 
 Check it out on GitHub: KylinLabAI/FaXia-App
 

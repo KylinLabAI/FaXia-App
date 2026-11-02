@@ -1,4 +1,4 @@
----
+﻿---
 title: "写一次 Markdown，同时发 11 个平台：开源工具 发匣 FaXia 上手指南"
 platform: tou-tiao
 language: zh-CN
@@ -37,7 +37,7 @@ visibility: "公开"
 如果你习惯命令行，一行搞定：
 
 ```bash
-npm install -g blog-assistant
+download the FaXia desktop installer (the CLI ships with it)
 ```
 
 ## 第一步：配置凭证
@@ -111,7 +111,7 @@ tdp publish 我的文章.md --dry-run
 
 发匣 FaXia 目前是 alpha 阶段（新功能还在加），但核心的 11 平台发布已经跑通。对需要多平台分发的内容创作者来说，能把每天"发文章"的时间从 1 小时压缩到 1 分钟。
 
-纯本地运行、代码开源（MIT 协议）、不收集任何数据——你的账号和文章始终在自己手里。
+纯本地运行、按 KylinLab.tech 商业许可发布、不收集任何数据——你的账号和文章始终在自己手里。
 
 去 GitHub 搜 **KylinLabAI/发匣 FaXia-App** 就能找到，觉得有用的话给个 Star 支持一下。
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "为什么我写了一个能同时发11个平台的开源工具——发匣 FaXia 技术实现与思考"
 platform: zhihu
 language: zh-CN
@@ -53,7 +53,7 @@ author: "kylinlab.tech"
 
 ### 1. 图片上传的链路
 
-你在 Markdown 里写 `![架构图](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/social/images/architecture.png)`，发匣 FaXia 的处理链路是：
+你在 Markdown 里写 `![架构图](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/social/images/architecture.png)`，发匣 FaXia 的处理链路是：
 
 ```
 解析 Markdown → 检测本地图片引用 → 
@@ -86,6 +86,6 @@ author: "kylinlab.tech"
 
 发匣 FaXia 目前处于 alpha 阶段，11 个平台的核心发布都已跑通，桌面端可用但细节还在打磨。
 
-如果你也是需要多平台分发的内容创作者，试试看：[GitHub - KylinLabAI/发匣 FaXia-App](https://github.com/KylinLabAI/发匣 FaXia-App)。纯本地运行，代码完全开源（MIT），不收集任何数据。
+如果你也是需要多平台分发的内容创作者，试试看：[GitHub - KylinLabAI/发匣 FaXia-App](https://github.com/KylinLabAI/发匣 FaXia-App)。纯本地运行，按 KylinLab.tech 商业许可发布，不收集任何数据。
 
 有什么需求或建议，欢迎提 Issue。如果觉得有用，也欢迎 Star 支持一下。

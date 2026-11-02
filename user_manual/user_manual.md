@@ -1,8 +1,8 @@
-# FaXia — User Manual
+﻿# FaXia — User Manual
 
 [中文介绍](user_manual.zh.md)
 
-![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/logo_256.png)
+![FaXia Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/logo_256.png)
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
    - You will see: Installation wizard guiding you through setup
 
 3. Launch FaXia from your applications folder or start menu
-   - You will see: The main application window with six tabs: Publish, Published, Comments, Settings, Account, and About (plus a Feedback button)
+   - You will see: The main application window with nine tabs: Publish, Published, Comments, Compose, Blogs, Skills, Settings, Account, and About (plus a Feedback button)
 
 **Expected result:** FaXia is installed and running successfully
 
@@ -36,7 +36,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 | Problem | Solution |
 |---------|----------|
 | Installation blocked by system security | Go to System Preferences/Settings and allow the app from "Unknown Sources" |
-| CLI command not found | Run `npm install -g faxia` or ensure Node.js is in your PATH |
+| CLI command not found | Reinstall the desktop app (the CLI ships with it), or from a source checkout use `npm run start` and ensure Node.js is in your PATH |
 
 #### Task: Configure Platform Credentials
 
@@ -47,9 +47,9 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 **Steps:**
 
 1. Click on the Settings tab
-   - You will see: Settings page with sections for App Data Directory, Blog Root Directory, and a unified Platform Credentials panel
+   - You will see: Settings page with sections for Credentials, AI Endpoint, App Data Directory, Log Level, and Blog Root Directory (draft root / blogs root / repo)
 
-![Platform credentials](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-3.png)
+![Platform credentials](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-3.png)
 
 2. For each platform you want to configure:
    - Click on the platform name
@@ -66,7 +66,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 | Problem | Solution |
 |---------|----------|
 | Credentials rejected | Double-check the API tokens and ensure they have sufficient permissions |
-| Zhihu authentication fails | Install Playwright with `npx playwright install chromium` and use Playwright mode |
+| Zhihu authentication fails | Switch Zhihu to Playwright mode in Settings — the desktop app bundles its own Chromium, so no Playwright install is needed (only source/CLI builds need `npx playwright install chromium`) |
 
 ### Daily Operations
 
@@ -81,7 +81,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 1. Click on the Publish tab
    - You will see: Publish interface with mode selection and file upload
 
-![Publish](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publish.png)
+![Publish](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-publish.png)
 
 2. Choose publish mode:
    - Single Platform: Select one platform from the dropdown
@@ -96,11 +96,11 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 5. Click "Publish"
    - You will see: Progress indicators for each platform showing success or failure
 
-![Publishing progress](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publishing.png)
+![Publishing progress](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-publishing.png)
 
 **Expected result:** Article is published to selected platforms with direct links provided
 
-![Publish results](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-published-blogs.png)
+![Publish results](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-published-blogs.png)
 
 **Troubleshooting:**
 
@@ -120,7 +120,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 1. Click on the Published tab
    - You will see: List of all previously published articles
 
-![Published history](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-4.png)
+![Published history](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-4.png)
 
 2. Find the article you want to update and click "Update"
    - You will see: Confirmation dialog with article details
@@ -150,15 +150,19 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 1. Click on the Comments tab
    - You will see: Centralized view of comments from all connected platforms
 
-![Comments](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-comments.png)
+![Comments](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-comments.png)
 
-2. Filter comments by platform or status (new, replied, resolved)
+2. Filter comments by platform
    - You will see: Filtered list of comments
 
-3. Click on a comment to view details and reply
-   - You will see: Comment detail panel with reply option
+3. Each article shows its comment counts (total / unreplied) and a link that
+   opens the platform's own comment page
 
-**Expected result:** Comments are displayed and can be managed from one interface
+**Expected result:** Comments are visible from one interface.
+
+> Replying to comments from inside FaXia is **not supported yet** — use the
+> link to reply on the platform itself. Status filters (new / replied /
+> resolved) are also not implemented; only platform filtering is available.
 
 **Troubleshooting:**
 
@@ -180,7 +184,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 3. Click "Browse" to select a folder for storing sessions, history, screenshots, and config
 4. Click "Save"
 
-![Data directory and log level](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-1.png)
+![Data directory and log level](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-1.png)
 
 **Expected result:** Data directory is updated
 
@@ -196,7 +200,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 3. Set the root folder where your blog Markdown files are stored
 4. Click "Save"
 
-![Blog root directory](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-2.png)
+![Blog root directory](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-2.png)
 
 **Expected result:** Blog settings are updated
 
@@ -214,7 +218,7 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 
 3. Sign in with GitHub or WeChat to activate your license
 
-![Account](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-account.png)
+![Account](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-account.png)
 
 **Expected result:** Account and update status are shown
 
@@ -222,8 +226,12 @@ Welcome to FaXia. This manual guides you through every feature, organized by wha
 
 ### Keyboard Shortcuts
 
-| Shortcut | Action |
-|----------|--------|
+FaXia does not register application-level keyboard shortcuts — every action is
+performed with the mouse in the desktop UI. The table below is reserved for a
+future release and is **not implemented**.
+
+| Shortcut | Action (planned) |
+|----------|------------------|
 | Ctrl/Cmd + P | Open Publish tab |
 | Ctrl/Cmd + L | Open Published tab |
 | Ctrl/Cmd + C | Open Comments tab |

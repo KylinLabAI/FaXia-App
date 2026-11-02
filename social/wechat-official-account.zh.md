@@ -1,4 +1,4 @@
----
+﻿---
 title: "发匣 FaXia：写一次，全网分发——11平台一键发布的效率工具"
 platform: wechat-official-account
 language: zh-CN
@@ -49,7 +49,7 @@ Markdown 里插入的本地图片，发匣 FaXia 会自动上传到对应平台�
 
 ## 怎么开始？
 
-1. 下载对应系统的安装包，或直接 `npm install -g blog-assistant`
+1. 下载对应系统的安装包，或直接 `download the FaXia desktop installer (the CLI ships with it)`
 2. 配置平台凭证（桌面端有设置面板，支持 API Token / Cookie 两种方式）
 3. 写 Markdown 文章（可选 YAML frontmatter 填标题、标签）
 4. 一条命令发布：`tdp publish 文章.md`
@@ -59,7 +59,7 @@ Markdown 里插入的本地图片，发匣 FaXia 会自动上传到对应平台�
 
 **写文章的时间，应该用来写更多好文章——而不是当搬运工。**
 
-发匣 FaXia 是纯本地工具：开源、无云端、无埋点，你的凭证和内容完全在自己手里。MIT 协议，自由使用。
+发匣 FaXia 是纯本地工具：无云端、无埋点，你的凭证和内容完全在自己手里。按 KylinLab.tech 商业许可发布。
 
 如果你也在手动搬运文章到各个平台，试试 发匣 FaXia，把省下来的时间用来打磨下一篇文章。
 

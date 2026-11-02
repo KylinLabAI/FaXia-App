@@ -1,4 +1,4 @@
----
+﻿---
 title: "Stop Copy-Pasting Your Articles Across Platforms — I Built a Tool That Does It for Free"
 platform: medium
 language: en-US
@@ -100,10 +100,10 @@ Coming next: scheduled publishing, a cross-platform analytics dashboard, and a p
 
 ## Try It
 
-The project is fully open source under the MIT license. No cloud service, no telemetry, no account. Everything runs on your machine.
+The project is distributed under the KylinLab.tech commercial license. No cloud service, no telemetry, no account. Everything runs on your machine.
 
 - **GitHub**: [KylinLabAI/FaXia-App](https://github.com/KylinLabAI/FaXia-App)
-- **CLI quick start**: `npm install -g faxia && faxia publish your-article.md`
+- **CLI quick start**: download the desktop installer (the CLI ships with it), or from a source checkout run `npm run start -- publish your-article.md`
 - **Desktop app**: download from the GitHub Releases page
 
 If you publish content across multiple platforms — especially across languages — give it a try. I built it to solve my own problem, and I hope it solves yours too.

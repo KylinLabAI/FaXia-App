@@ -1,4 +1,4 @@
----
+﻿---
 title: "I made an open-source tool that publishes Markdown to 11 platforms at once — no cloud, fully local"
 platform: reddit
 language: en-US
@@ -16,7 +16,7 @@ reddit_post_type: "self"
 
 # I made an open-source tool that publishes Markdown to 11 platforms at once — no cloud, fully local
 
-**TL;DR:** FaXia takes one Markdown file, auto-uploads images, converts formatting, and publishes to 11 platforms (Zhihu, Medium, WeChat, Reddit, etc.) in parallel. Runs entirely on your machine. MIT licensed. GitHub: KylinLabAI/FaXia-App
+**TL;DR:** FaXia takes one Markdown file, auto-uploads images, converts formatting, and publishes to 11 platforms (Zhihu, Medium, WeChat, Reddit, etc.) in parallel. Runs entirely on your machine under the KylinLab.tech commercial license. GitHub: KylinLabAI/FaXia-App
 
 ---
 
@@ -51,6 +51,6 @@ It's in alpha — all 11 platforms work, but the GUI is still being polished. Ro
 
 ---
 
-I built this for my own workflow, but it's been really useful, so I'm sharing it. It's MIT licensed — use it, fork it, contribute if you want.
+I built this for my own workflow, but it's been really useful, so I'm sharing it. It ships under the KylinLab.tech commercial license — grab the installer and try it.
 
 I'd love feedback on the architecture, especially the Playwright-based adapters (those are the trickiest part). What would you want to see in a tool like this?

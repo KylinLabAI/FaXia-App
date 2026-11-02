@@ -1,8 +1,8 @@
-# 发匣 Faxia — 用户手册
+﻿# 发匣 Faxia — 用户手册
 
 [English](user_manual.md)
 
-![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/logo_256.png)
+![发匣 Logo](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/logo_256.png)
 
 ## 简介
 
@@ -27,7 +27,7 @@
    - 您将看到：安装向导，引导您完成安装
 
 3. 从应用程序文件夹或开始菜单启动发匣
-   - 您将看到：主应用窗口，包含六个标签页：发布、已发布、评论、设置、账户、关于（另有反馈按钮）
+   - 您将看到：主应用窗口，包含九个标签页：发布、已发布、评论、写作（Compose）、博客库（Blogs）、技能（Skills）、设置、账户、关于（另有反馈按钮）
 
 **预期结果：** 发匣安装成功并正常运行
 
@@ -36,7 +36,7 @@
 | 问题 | 解决方案 |
 |------|----------|
 | 系统安全阻止安装 | 进入系统偏好设置/设置，允许来自"未知来源"的应用 |
-| CLI 命令未找到 | 运行 `npm install -g faxia` 或确保 Node.js 在 PATH 中 |
+| CLI 命令未找到 | 重新安装桌面端（CLI 随包提供）；从源码目录运行时使用 `npm run start`，并确保 Node.js 在 PATH 中 |
 
 #### 任务：配置平台凭证
 
@@ -47,9 +47,9 @@
 **操作步骤：**
 
 1. 点击设置标签页
-   - 您将看到：设置页面，包含应用数据目录、博客根目录，以及统一的平台凭证面板
+   - 您将看到：设置页面，包含平台凭证、AI 端点、应用数据目录、日志级别、博客根目录（草稿根 / 已发布根 / 仓库路径）
 
-![平台凭证](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-3.png)
+![平台凭证](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-3.png)
 
 2. 为每个要配置的平台：
    - 点击平台名称
@@ -66,7 +66,7 @@
 | 问题 | 解决方案 |
 |------|----------|
 | 凭证被拒绝 | 仔细检查 API 令牌，确保有足够的权限 |
-| 知乎认证失败 | 使用 `npx playwright install chromium` 安装 Playwright，并使用 Playwright 模式 |
+| 知乎认证失败 | 在设置中将知乎切换为 Playwright 模式——桌面端已内置 Chromium，无需安装 Playwright（仅源码/CLI 开发需执行 `npx playwright install chromium`） |
 
 ### 日常操作
 
@@ -81,7 +81,7 @@
 1. 点击发布标签页
    - 您将看到：发布界面，包含模式选择和文件上传
 
-![发布](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publish.png)
+![发布](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-publish.png)
 
 2. 选择发布模式：
    - 单平台：从下拉菜单选择一个平台
@@ -96,11 +96,11 @@
 5. 点击"发布"
    - 您将看到：每个平台的进度指示器，显示成功或失败
 
-![发布进度](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-publishing.png)
+![发布进度](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-publishing.png)
 
 **预期结果：** 文章发布到选定平台，提供直达链接
 
-![发布结果](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-published-blogs.png)
+![发布结果](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-published-blogs.png)
 
 **常见问题：**
 
@@ -120,7 +120,7 @@
 1. 点击已发布标签页
    - 您将看到：所有已发布文章的列表
 
-![已发布历史](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-4.png)
+![已发布历史](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-4.png)
 
 2. 找到要更新的文章并点击"更新"
    - 您将看到：确认对话框，显示文章详情
@@ -150,15 +150,17 @@
 1. 点击评论标签页
    - 您将看到：所有已连接平台的评论集中视图
 
-![评论](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-comments.png)
+![评论](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-comments.png)
 
-2. 按平台或状态（新、已回复、已解决）筛选评论
+2. 按平台筛选评论
    - 您将看到：筛选后的评论列表
 
-3. 点击评论查看详情并回复
-   - 您将看到：评论详情面板，包含回复选项
+3. 每篇文章显示评论数（总数 / 未回复）以及跳转原平台评论页的链接
 
-**预期结果：** 评论显示在一个界面中，可以进行管理
+**预期结果：** 评论在一个界面中集中可见。
+
+> 暂不支持在应用内回复评论——请通过链接跳转原平台回复。状态筛选（新 / 已回复 /
+> 已解决）也未实现，目前仅支持按平台筛选。
 
 **常见问题：**
 
@@ -180,7 +182,7 @@
 3. 点击"浏览"选择存储会话、历史、截图和配置的文件夹
 4. 点击"保存"
 
-![数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-1.png)
+![数据目录与日志级别](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-1.png)
 
 **预期结果：** 数据目录已更新
 
@@ -196,7 +198,7 @@
 3. 设置存放博客 Markdown 文件的根目录
 4. 点击"保存"
 
-![博客根目录](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-settings-2.png)
+![博客根目录](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-settings-2.png)
 
 **预期结果：** 博客设置已更新
 
@@ -214,7 +216,7 @@
 
 3. 使用 GitHub 或微信登录以激活授权
 
-![账户](https://raw.githubusercontent.com/KylinLabAI/Faxia-App/master/user_manual/resources/faxia-account.png)
+![账户](https://raw.githubusercontent.com/KylinLabAI/FaXia-App/master/user_manual/resources/faxia-account.png)
 
 **预期结果：** 显示账户与更新状态
 
@@ -222,7 +224,9 @@
 
 ### 快捷键
 
-| 快捷键 | 功能 |
+发匣未注册应用级快捷键——所有操作均在桌面界面中用鼠标完成。下表为后续版本预留，**暂未实现**。
+
+| 快捷键 | 功能（规划中） |
 |--------|------|
 | Ctrl/Cmd + P | 打开发布标签页 |
 | Ctrl/Cmd + L | 打开已发布标签页 |

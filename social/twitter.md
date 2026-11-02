@@ -1,4 +1,4 @@
----
+﻿---
 title: "FaXia - Publish Once, Reach Everywhere"
 platform: twitter
 language: en-US
@@ -44,13 +44,13 @@ What makes it different:
 4/5
 Quick start:
 ```
-npm install -g faxia
+download the FaXia desktop installer (the CLI ships with it)
 faxia publish my-article.md
 ```
 
 Or use the desktop app — drag, select platforms, click publish.
 
-All open source (MIT). No cloud, no tracking.
+Runs locally under the KylinLab.tech commercial license. No cloud, no tracking.
 
 5/5
 Stop copy-pasting your articles across platforms. Write once, publish everywhere.

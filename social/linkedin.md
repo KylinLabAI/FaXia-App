@@ -1,4 +1,4 @@
----
+﻿---
 title: "FaXia: The Open-Source Tool That Publishes Your Markdown to 11 Platforms at Once"
 platform: linkedin
 language: en-US
@@ -33,7 +33,7 @@ Users choose their interface: a CLI (`faxia`) for scripting and CI integration, 
 - **11 platforms supported**: GitHub Pages, WeChat, Zhihu, Juejin, Toutiao, Weibo, Reddit, X/Twitter, Medium, Facebook, LinkedIn
 - **Hours saved per week**: what used to take 60 minutes of copy-pasting now completes in seconds
 - **100% local**: credentials, content, and publish history never leave the user's device
-- **Open source (MIT)**: fully auditable, no vendor lock-in
+- **Commercial license**: distributed under the KylinLab.tech commercial license; runs on your machine, no vendor lock-in
 - **Concurrent publishing**: all platforms fire in parallel with `Promise.allSettled` — one failure never blocks the rest
 
 ## What's Next
